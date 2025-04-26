@@ -124,5 +124,5 @@ async def inline_query_handler(event: events.InlineQuery):
         result = [builder.article(title="Error", text='Please enter a valid username starting with "@".')]
     await event.answer(result)
 
-
+print("✅ Bot is now online and running!")
 client.run_until_disconnected()
